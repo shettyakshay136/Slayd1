@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "hosting",  
+    "rewrites": [
+      {
+        "source": "/Versio.js",
+        "destination": "/Versio.js"
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

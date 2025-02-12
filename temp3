@@ -1,0 +1,13 @@
+<View style={styles.prize}>
+{item.product? (
+  <View>
+    <Text style={{ fontSize: 16, color: 'black', fontWeight: '500' }}>
+        ₹{item.product.price}
+    </Text>
+    <Text style={styles.name}>{item.product.brand}</Text>
+    <Text numberOfLines={1}  style={styles.name}>{item.product.name}</Text>
+  </View>
+):(
+  <Text style={{ fontSize: 16, color: 'black', fontWeight: '500' }}>{item.tagged_products[0].product.brand}</Text>
+)}
+</View>
